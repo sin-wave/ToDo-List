@@ -1,2 +1,7 @@
 # To-Do-List
-This is a To-Do-App that has its own database and further work on progress
+- # Tech Used
+- Node.js
+- EJS (Template)
+- MonoDB (Database)
+- HTML & CSS
+- # A simple To-Do List to learn nodejs fundamental
