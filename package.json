@@ -1,0 +1,32 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "To-Do-List",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manikant Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "expressjs": "^1.0.1",
+    "mongoose": "^5.13.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devil-cyber/To-Do-List.git"
+  },
+  "keywords": [
+    "to-do-ist",
+    "html",
+    "nodeJs",
+    "css",
+    "javascript"
+  ],
+  "bugs": {
+    "url": "https://github.com/devil-cyber/To-Do-List/issues"
+  },
+  "homepage": "https://github.com/devil-cyber/To-Do-List#readme"
+}

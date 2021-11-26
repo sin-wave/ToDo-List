@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+
+    <title>
+        <%= title %>
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/44a19c6d3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./home.css">
+
+</head>
+
+<body>
+    <div class="container div1 col-7">
+        <h3 style="text-align:center" id="heading"><i class="fas fa-clipboard-list"></i>&nbsp;To Do List</h3>
+
+        <ul id="list">
+            <% for(let i of list){%>
+                <li>
+                    <span id="date">
+                    <%=i.date%>
+                </span>
+                    <span id="work">
+                    <%=i.work%>
+                </span>
+                    <span id="status">
+                    Status
+                </span>
+                    <form method="POST" action="/mark-complete">
+                        <label>Mark as Complete</label>
+                        <input id="check" type="checkbox" name="checked" value="true">
+                    </form>
+                    <span id="delete"><a href="/delete-list/?id=<%=i.id%>"><i class="fas fa-trash-alt"></i></a></span>
+                </li>
+                <%}%>
+        </ul>
+
+        <form action="/create-list" method="POST">
+            <input id="date-input" name="date" required placeholder="date">
+            <input type="text" name="work" required placeholder="work">
+            <button type="submit">Add</button>
+
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src="home.js"></script>
+</body>
+
+</html>

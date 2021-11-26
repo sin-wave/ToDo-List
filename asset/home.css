@@ -1,0 +1,58 @@
+body {
+    background-color: skyblue;
+}
+
+.div1 {
+    margin-top: 10vh;
+    height: 90vh;
+    background-color: whitesmoke;
+}
+
+#heading {
+    font-family: cursive;
+}
+
+#list {
+    list-style: none;
+}
+
+
+/* #date,
+#work,
+#status {
+
+} */
+
+li {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightyellow;
+    color: orange;
+    font-family: sans-serif;
+    font-weight: 550;
+    border-radius: 5px;
+}
+
+
+/* #delete .im {
+    width: 100%;
+} */
+
+#list li {
+    /* text-align: center; */
+    border: 2px solid white
+    /* width: 25%; */
+}
+
+form {
+    text-align: center;
+}
+
+#delete a:hover {
+    color: red;
+}
+
+#delete a {
+    color: orange;
+    text-decoration: none;
+}
